@@ -1,0 +1,7 @@
+{
+    "name":"crx1",
+    "description":"chrome ext 1 demo",
+    "version":"1.0",
+    "manifest_version":3
+
+}

@@ -1,0 +1,30 @@
+{
+    "name":"erx1",
+    "description":"chrome ext 1 demo",
+    "version":"1.0",
+    "manifest_version":3,
+    "action":{
+        "default_popup":"./html/index.html"
+    },
+    "permissions":[
+        "tabs",
+        "scripting"
+    ],
+    "host_permissions":["https://*/*","http://*/*"],
+    "background":{
+        "service_worker":"service_worker.js"
+    },
+    "content_scripts":[
+        {
+            "css":[
+                "./content/content2.css"
+            ],
+            "js":[
+                "./content/content2.js"
+            ],
+            "matches":[
+                "https://www.baidu.com/*"
+            ]
+        }
+    ]
+}
